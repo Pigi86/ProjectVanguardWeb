@@ -1,0 +1,733 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Project Vanguard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="birthdatePage" style="display:none; height:100%">
+        <center>
+            <div>
+                <div>
+                    <img class="img-fluid" style="width:35%;padding-top:5%" src="img/logo.fw.png" alt="">
+                </div>
+                <br>
+                <br>
+                <div id="birthControl">
+                    <div>
+                        <h1 class="main_title" style="color:white; margin-bottom:40px;">
+                            Enter your Date of Birth
+                        </h1>
+                    </div>
+                    <div class="container" style="padding-top:0%">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <span class="day">
+                                    Day
+                                </span>
+                                <div>
+                                    <select id="day">
+                                        <option value="-1"></option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <span class="day">
+                                    Month
+                                </span>
+                                <div>
+                                    <select id="month">
+                                        <option value="-1"></option>
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">August</option>
+                                        <option value="9">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <span class="day">
+                                    Year
+                                </span>
+                                <div>
+                                    <select id="year">
+                                        <option value="-1"></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input type="button" class="validateButton" onclick="Validate();" value="Validate" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="errorBirth" style="display:none;">
+                <h1 class="main_title" style="color:white">You cannot view this content at this time</h1>
+            </div>
+        </center>
+    </div>
+
+    <div id="homePage" style="display:none">
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav justify-content-center">
+                                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#development">Development</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#game">The Game</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#weapons">Weapons</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#media">Media</a>
+                                <li class="nav-item"><a class="nav-link" href="#demo">Demo</a>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        <!--================Home Banner Area =================-->
+        <section id="home" class="home_banner_area">
+            <div class="banner_inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="home_left_img">
+                                <img class="img-fluid" src="img/logo.fw.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="banner_content">
+                                <h2>
+                                    Sci Fi <br>
+                                    Horror FPS <br>
+                                </h2>
+                                <p>
+                                    You are part of the “White Tiger” special forces sent to the spaceship "Alastor-48" to retrieve the "Project Vanguard". But something happended in that ship...<br><br>
+                                    Fight in this sci-fi horror adventure by using your tools, finding differents keys to advance and exploring the spaceship to complete your mission.
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <a id="play-home-video" class="video-play-button" href="https://www.youtube.com/watch?v=tpW_ErRLgUo">
+                                        <span></span>
+                                    </a>
+                                    <div class="watch_video text-uppercase">
+                                        watch the trailer
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        <!--================Start Development Area =================-->
+        <section id="development" class="about_us_area section_gap_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main_title">
+                            <h2>Development</h2>
+                            <h1>Development</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row about_content align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section_content">
+                            <h6>Development</h6>
+                            <h1>The Game Development</h1>
+                            <p>
+                                Developed using <a href="https://unity.com" target="_blank">Unity</a> with <a href="https://visualstudio.microsoft.com" target="_blank">Visual Studio</a> C#. All the 3D models and animations are from the <a href="https://assetstore.unity.com" target="_blank">Unity Asset Store</a> and <a href="https://www.mixamo.com" target="_blank">Mixamo.com</a>, credits to the respective authors.
+                                The sounds are from <a href="https://www.freesound.org" target="_blank">FreeSound</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about_us_image_box justify-content-center">
+                            <img class="img-fluid w-100" src="img/2020-09-27 19-13-07.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Development Area =================-->
+        <!--================First The Game Area =================-->
+        <section id="game" class="about_us_area section_gap_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main_title">
+                            <h2>The Game</h2>
+                            <h1>The Game</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row about_content align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about_us_image_box justify-content-center">
+                            <img class="img-fluid w-100" src="img/screen1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section_content">
+                            <h6>The Game Story</h6>
+                            <h1>November 2nd 2986</h1>
+                            <p>
+                                During its search for a way to further the development of humankind, the Federation discovered a new habitable planet within the Scorpio Solar System. It received the name "SCRP-047".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row about_content align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section_content">
+                            <h1>May 25th 2987</h1>
+                            <p>
+                                The spaceship Alastor-48 was tasked with exploring the planet and determining if it could become the cornerstone for mankind’s new era. After months of exhaustive research, the scientists from Alastor-48 found something beyond our knowledge that they claimed could be the key to the betterment of the species. They were ordered to begin exploiting the material immediately. The research done on that planet would henceforth be known as “Project Vanguard”.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about_us_image_box justify-content-center">
+                            <img class="img-fluid w-100" src="img/alastor48logo.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row about_content align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about_us_image_box justify-content-center">
+                            <img class="img-fluid w-100" src="img/whitetigerlogo.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section_content">
+                            <h1>September 15th 2987</h1>
+                            <p>
+                                Last month all contact was lost with the spaceship Alastor-48. The “White Tiger” special forces team was dispatched to investigate and, worst case scenario, retrieve the research being done at the spaceship.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row about_content align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section_content">
+                            <h1>October 24th 2987</h1>
+                            <p>
+                                You arrived at Alastor-48 as part of the “White Tiger” special forces. Your team tried contacting the crew but there was nobody at the station. After a short while, you start feeling dizzy, until everything turns to darkness.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about_us_image_box justify-content-center">
+                            <img class="img-fluid w-100" src="img/118773216_10218304407983061_2368608754087889198_o.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 d-flex align-items-center" style="padding-left:40%;">
+                        <a id="play-home-video2" class="video-play-button" href="https://www.youtube.com/watch?v=r5ViwAXEXgU">
+                            <span></span>
+                        </a>
+                        <div class="watch_video text-uppercase">
+                            <span style="color: white !important">&nbsp;&nbsp;watch the intro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End The Game Area =================-->
+        <!--================First Weapons Area =================-->
+        <section id="weapons" class="about_us_area section_gap_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main_title">
+                            <h2>Weapons</h2>
+                            <h1>Weapons</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row about_content align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about_us_image_box justify-content-center">
+                            <img class="img-fluid w-100" src="img/knife.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section_content">
+                            <h6>Combat Knife</h6>
+                            <h1>Silver Fang XC 140</h1>
+                            <p>
+                                A specially-treated military-grade knife to use in close combat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row about_content align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section_content">
+                            <h6>Tactic Handgun</h6>
+                            <h1>Geind WT-725</h1>
+                            <p>
+                                12-shot capacity 9mm handgun. Designed specially to the White Tiger Special Forces to give power and accuracy.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about_us_image_box justify-content-center">
+                            <img class="img-fluid w-100" src="img/pistol.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row about_content align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about_us_image_box justify-content-center">
+                            <img class="img-fluid w-100" src="img/machinegun.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section_content">
+                            <h6>Assault Rifle</h6>
+                            <h1>Lancer LCP-28</h1>
+                            <p>
+                                30-shot capacity. Uses a closed bold and high accuracy. Used by the Assault team of the White Tiger Special Forces.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row about_content align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section_content">
+                            <h6>Combat Shotgun</h6>
+                            <h1>Destructor KL-986</h1>
+                            <p>
+                                8-round capacity 12-gauge pump-combat shotgun. Used by the Heavy team of the White Tiger Special Forces.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about_us_image_box justify-content-center">
+                            <img class="img-fluid w-100" src="img/shotgun.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row about_content align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about_us_image_box justify-content-center">
+                            <img class="img-fluid w-100" src="img/grenade.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section_content">
+                            <h6>Grenade</h6>
+                            <h1>GX-450</h1>
+                            <p>
+                                A hand grenade that disperses lethal metal fragments and destroys its surroundings on detonation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row about_content align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section_content">
+                            <h6>Rocket Launcher</h6>
+                            <h1>Eradicator XC-170</h1>
+                            <p>
+                                A recoilless rocket launcher that fires 84mm projectiles. The piercing power of the rocket causes more damage than the explosion.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about_us_image_box justify-content-center">
+                            <img class="img-fluid w-100" src="img/rocket.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Weapons Area =================-->
+        <!--================ Start Gallery Area =================-->
+        <section id="media" class="gallery_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main_title">
+                            <h2>Media</h2>
+                            <h1>Media</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="single-gallery">
+                                    <div class="overlay"></div>
+                                    <img class="img-fluid w-100" src="img/screen1.jpg" alt="">
+                                    <div class="content">
+                                        <a class="pop-up-image" href="img/screen1.jpg">
+                                            <i class="lnr lnr-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="single-gallery">
+                                    <div class="overlay"></div>
+                                    <img class="img-fluid w-100" src="img/screen2.jpg" alt="">
+                                    <div class="content">
+                                        <a class="pop-up-image" href="img/screen2.jpg">
+                                            <i class="lnr lnr-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="single-gallery">
+                                    <div class="overlay"></div>
+                                    <img class="img-fluid w-100" src="img/81039926_10216235948912877_7074893287881965568_n.jpg" alt="">
+                                    <div class="content">
+                                        <a class="pop-up-image" href="img/81039926_10216235948912877_7074893287881965568_n.jpg">
+                                            <i class="lnr lnr-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="single-gallery">
+                                    <div class="overlay"></div>
+                                    <img class="img-fluid w-100" src="img/screen3.jpg" alt="">
+                                    <div class="content">
+                                        <a class="pop-up-image" href="img/screen3.jpg">
+                                            <i class="lnr lnr-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="single-gallery">
+                                    <div class="overlay"></div>
+                                    <img class="img-fluid w-100" src="img/inventory.png" alt="">
+                                    <div class="content">
+                                        <a class="pop-up-image" href="img/inventory.png">
+                                            <i class="lnr lnr-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="single-gallery">
+                                    <div class="overlay"></div>
+                                    <img class="img-fluid w-100" src="img/118773216_10218304407983061_2368608754087889198_o.jpg" alt="">
+                                    <div class="content">
+                                        <a class="pop-up-image" href="img/118773216_10218304407983061_2368608754087889198_o.jpg">
+                                            <i class="lnr lnr-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="single-gallery">
+                                    <div class="overlay"></div>
+                                    <img class="img-fluid w-100" src="img/wallpaper.jpg" alt="">
+                                    <div class="content">
+                                        <a class="pop-up-image" href="img/wallpaper.jpg">
+                                            <i class="lnr lnr-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="single-gallery">
+                                    <div class="overlay"></div>
+                                    <img class="img-fluid w-100" src="img/whitetigerlogo.jpg" alt="">
+                                    <div class="content">
+                                        <a class="pop-up-image" href="img/whitetigerlogo.jpg">
+                                            <i class="lnr lnr-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="single-gallery">
+                                    <div class="overlay"></div>
+                                    <img class="img-fluid w-100" src="img/alastor48logo.jpg" alt="">
+                                    <div class="content">
+                                        <a class="pop-up-image" href="img/alastor48logo.jpg">
+                                            <i class="lnr lnr-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================ End Gallery Area =================-->
+        <!--================ Start Demo Area =================-->
+        <section id="demo" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main_title">
+                            <h2>Demo</h2>
+                            <h1>Demo</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="">
+                        <div style="text-align:center" class="">
+                            <h1>Coming Soon...</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================ End Demo Area =================-->
+        <!--================Footer Area =================-->
+        <footer class="footer_area section_gap_top">
+            <div class="container">
+                <div class="row single-footer-widget">
+                    <div class="col-sm">
+                        <img src="img/pigisgames2.fw.png" />
+                    </div>
+                    <div class="col-sm">
+                        <img src="img/unity-logo-black_1280.0.jpg" />
+                    </div>
+                    <div class="col-sm">
+                        <img src="img/b5efe2d5-db8b-4999-b3c1-f83e72fe6a03_Unity_Asset_Store_Logo_square.png" />
+                    </div>
+                    <div class="col-sm">
+                        <img src="img/Visual-Studio-Code.png" />
+                    </div>
+                </div>
+                <div class="row single-footer-widget">
+                    <div class="col-sm">
+                        <img src="img/932px-C_Sharp_logo.svg.png" />
+                    </div>
+                    <div class="col-sm">
+                        <img src="img/sprite-brand.png" />
+                    </div>
+                    <div class="col-sm">
+                        <img src="img/Freesound_project_website_logo.png" />
+                    </div>
+                    <div class="col-sm">
+                        <img src="img/unnamed.png" />
+                    </div>
+                </div>
+                <br>
+                <div class="row single-footer-widget">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="copy_right_text">
+                            <p>
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="social_widget">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--================End Footer Area =================-->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if (localStorage.birth != null) {
+                $("#birthdatePage").hide();
+                $("#homePage").show();
+            }
+            else {
+                $("#birthdatePage").show();
+            }
+        });
+        // get selectbox
+        var selectBox = document.getElementById('year');
+        // loop through years
+        for (var i = new Date().getFullYear(); i >= 1900; i--) {
+            // create option element
+            var option = document.createElement('option');
+            // add value and text name
+            option.value = i;
+            option.innerHTML = i;
+            // add the option element to the selectbox
+            selectBox.appendChild(option);
+
+            var li = document.createElement('li');
+            // add value and text name
+            li.attributes["data-value"] = i;
+            li.className = "option";
+            li.innerHTML = i;
+
+            $(selectBox).parent().find(".list").append(li);
+        }
+
+        // get selectbox
+        var selectBox = document.getElementById('day');
+        // loop through years
+        for (var i = 1; i <= 31; i++) {
+            // create option element
+            var option = document.createElement('option');
+            // add value and text name
+            option.value = i;
+            option.innerHTML = i;
+            // add the option element to the selectbox
+            selectBox.appendChild(option);
+
+            var li = document.createElement('li');
+            // add value and text name
+            li.attributes["data-value"] = i;
+            li.className = "option";
+            li.innerHTML = i;
+
+            $(selectBox).parent().find(".list").append(li);
+        }
+
+        function Validate() {
+            dobcheck();
+            //$("#birthdatePage").hide();
+            //$("#homePage").show();
+        }
+
+        function dobcheck() {
+            var day = $("#day").parent().find("li.option.selected").text();
+            var month = $("#month").parent().find("li.option.selected").attr("data-value");
+            var year = $("#year").parent().find("li.option.selected").text();
+
+            //debugger;
+
+            if (day == "" || month == -1 || year == "") {
+                //alert("Please enter your birthdate.");
+                return;
+            }
+
+            var birth = day + "/" + month + "/" + year;
+            //alert(birth);
+            if (birth != "") {
+
+                var record = birth;
+                var currentdate = new Date();
+                var day1 = currentdate.getDate();
+                var month1 = currentdate.getMonth();
+                month1++;
+                var year11 = currentdate.getFullYear() - 17;
+                var year2 = currentdate.getFullYear() - 100;
+                var record_day1 = record.split("/");
+                var sum = record_day1[1] + '/' + record_day1[0] + '/' + record_day1[2];
+                var current = month1 + '/' + day1 + '/' + year11;
+                var current1 = month1 + '/' + day1 + '/' + year2;
+                var d1 = new Date(current)
+                var d2 = new Date(current1)
+                var record1 = new Date(sum);
+                if (record1 > d1) {
+                    $("#birthControl").hide();
+                    $("#errorBirth").show();
+                    //alert("Sorry ! Minors need parential guidance to use this website");
+                    document.getElementById('bday').blur();
+                    document.getElementById('bday').value = "";
+                    document.getElementById('bday').focus();
+                    return false;
+                }
+                else {
+                    $("#birthdatePage").hide();
+                    $("#homePage").show();
+
+                    localStorage.birth = birth;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
