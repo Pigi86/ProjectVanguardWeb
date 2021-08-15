@@ -34,6 +34,10 @@ body {
     background: black;
 }
 
+b {
+    color: #222222 !important;
+}
+
 .day {
     color: white;
     font-family: "Rajdhani", sans-serif;
